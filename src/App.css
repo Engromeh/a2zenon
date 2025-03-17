@@ -50,9 +50,6 @@ body {
   }
 }
 
-.card {
-  padding: 2em;
-}
 
 .read-the-docs {
   color: #888;
@@ -64,16 +61,18 @@ body {
 }
 .heeder-dash {
   position: absolute;
-  bottom: -3%;
+  top:  90rem;
   right: 38%;
 }
 .body-dash {
   position: absolute;
-  bottom: -17%;
+  top:  93rem;
   right: 34%;
 }
 .liinfooter {
   padding-bottom: 10px;
+  color: #38404F;
+  font-size: 21px;
 }
 .hero-bg-gold {
   position: absolute;
@@ -97,4 +96,50 @@ body {
   height: 350px;
   z-index: 1;
   opacity: 0.8;
+}
+.card-bodye{
+  padding: 2rem !important;
+}
+.titel-service{
+  background: linear-gradient(to right, #52CFF3 49%, #4A46E0 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.titel-team{
+  background: linear-gradient(to right, #52CFF3 15%, #4A46E0 85%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.subservice-titel{
+  background: linear-gradient(to right, #52CFF3 49%, #4A46E0 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.paragraph-discover{
+  display: flex
+;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    bottom: 22rem;
+    color: white;
+    right: 6rem;
+}
+.previous-button{
+  background-color: #4318FF !important;
+  color: white !important;
+  width: 100%;
+  border-radius: 10px;
+}
+.card-faq{
+  padding: 0 !important;
+  border: 1px solid #E8EAED;
+  border-radius: 10px
 }

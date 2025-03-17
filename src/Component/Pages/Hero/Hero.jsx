@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="col-md-6 position-relative text-center">
           <div className="position-relative d-inline-block">
             <img
-              src="https://via.placeholder.com/200"
+              src="ht0"
               alt="Person"
               className="rounded-circle img-fluid"
             />

@@ -30,7 +30,7 @@ const teamMembers = [
 
 const TeamSection = () => {
   return (
-    <section className="py-5 text-center bg-light">
+    <section className="py-5 text-center ">
       <div className="container">
         <div>
           <div className=" d-flex justify-content-center align-items-center  mt-4">
@@ -53,7 +53,7 @@ const TeamSection = () => {
             >
               اريد الانضمام
             </button>
-            <h2 className="text-primary fw-bold">فريق العمل</h2>
+            <h2 className="titel-team fw-bold">فريق العمل</h2>
           </div>
           <p className="text-muted mx-auto w-75">
             اي تو زينون المصدر الأمثل لكل ما يتعلق بالتسويق الابداعي والفعّال.
