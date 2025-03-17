@@ -1,5 +1,5 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css"; // استيراد Bootstrap
+import "bootstrap/dist/css/bootstrap.min.css"; 
 
 const teamMembers = [
   {
@@ -8,7 +8,7 @@ const teamMembers = [
     title: "CEO & Founder",
     description:
       "With over 15 years in software development and business strategy, Alex leads our vision and growth initiatives.",
-    image: "", // يمكنك إضافة رابط صورة هنا
+    image: "", 
   },
   {
     id: 2,
