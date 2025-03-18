@@ -1,6 +1,24 @@
+import ai from "../../../assets/Ai.svg"
+
 const Footer = () => {
   return (
     <>
+
+    <div className=" container  mt-3 text-center" style={{backgroundColor:"#4318FF", height:"15rem" , borderRadius:"50px 50px 0px 0px"}}>
+    <div className=" text-center text-white align-content-center ">
+    <h3 className=" fw-bold" style={{marginTop:"6%"}}>هل أنت مستعد لبدء مشروعك؟</h3>
+<p>اتصل بنا اليوم لمناقشة كيفية تحقيق رؤيتك</p>
+</div>
+<div className=" d-flex gap-4 justify-content-center align-items-center" >
+
+<button className="btn  d-flex gap-2" style={{backgroundColor:"#FFFFFF" , border:"1px soild"}}>المساعد الذكي
+  <img src={ai} alt="ai" />
+  </button>
+  <button className="btn" style={{backgroundColor:"#FFFFFF"}}>طلب استشارة مجانية</button>
+ 
+
+</div>
+    </div>
       <footer
         className="text-white py-5 px-5 w-100 text-center text-md-start d-none d-md-block"
         style={{ backgroundColor: "white", color: "black" }}
@@ -13,7 +31,7 @@ const Footer = () => {
                 style={{
                   fontFamily: "Poppins",
                   fontSize: "20px",
-                  color: "#D9D9D9",
+                  color: "black",
                 }}
               >
                 الدعم
@@ -40,7 +58,7 @@ const Footer = () => {
                 style={{
                   fontFamily: "Poppins",
                   fontSize: "20px",
-                  color: "#D9D9D9",
+                  color: "black",
                 }}
               >
                 الوصول السريع{" "}
@@ -68,7 +86,7 @@ const Footer = () => {
                 style={{
                   fontFamily: "Poppins",
                   fontSize: "20px",
-                  color: "#D9D9D9",
+                  color: "black",
                 }}
               >
                 الشركة{" "}
@@ -96,7 +114,7 @@ const Footer = () => {
                 style={{
                   fontFamily: "Poppins",
                   fontSize: "20px",
-                  color: "#D9D9D9",
+                  color: "black",
                 }}
               >
                 عن
@@ -123,7 +141,7 @@ const Footer = () => {
                 style={{
                   fontFamily: "Poppins",
                   fontSize: "20px",
-                  color: "#D9D9D9",
+                  color: "black",
                 }}
               >
                 A2ZENON
@@ -132,7 +150,7 @@ const Footer = () => {
                 style={{
                   fontFamily: "Poppins",
                   fontSize: "18px",
-                  color: "#D9D9D9",
+                  color: "black",
                 }}
               >
                 "نحن شركة متخصصة في البرمجة والتسويق والتصميم والاستضافات، نقدم
