@@ -118,22 +118,32 @@ const Hero = () => {
             والتسويق الرقمي لمساعدتك على النجاح في العصر الرقمي.
           </p>
           <div className="mt-4 d-flex gap-2 justify-content-end">
-            <div className=" d-flex ">
-              <button
-                className="btn  d-flex gap-2  "
-                style={{
-                  backgroundColor: "#4318FF",
-                  color: "white",
-                  direction: "rtl",
-                }}
-              >
-                فيديو تعريفي بنا
-                <img
-                  src={videoicon}
-                  alt="oo"
-                  style={{ backgroundColor: "white" }}
-                />
-              </button>
+          <div className="d-flex">
+  <button
+    className="btn d-flex align-items-center justify-content-between gap-2 px-4 py-2"
+    style={{
+      backgroundColor: "#4318FF",
+      color: "white",
+      direction: "rtl",
+      borderRadius: "8px", 
+    }}
+  >
+    فيديو تعريفي بنا
+    <img
+      src={videoicon}
+      alt="oo"
+      style={{
+        backgroundColor: "white",
+        borderRadius: "50%",
+        width: "30px", 
+        padding:"3px" ,
+        height: "25px",
+      }}
+    />
+  </button>
+
+
+
             </div>
             <button
               className="btn me-2"
