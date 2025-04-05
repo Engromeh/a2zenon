@@ -30,7 +30,7 @@ const Navbar = () => {
             {[
               { path: "/", label: "الرئيسية" },
               { path: "/layout/Work", label: "الأعمال" },
-              { path: "#", label: "الخدمات" },
+              { path: "/layout/Service", label: "الخدمات" },
               { path: "/layout/Aboutus", label: "معلومات عنا" },
               { path: "#", label: "احصل على سعر" },
               { path: "/layout/Artical", label: "المقالات" },

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import search from "../assets/search.svg"
 import work1 from "../assets/work1.svg"
 import work2 from "../assets/work2.svg"
+import { useNavigate } from 'react-router-dom'
 
 const Work = () => {
 
@@ -53,6 +54,11 @@ const Work = () => {
           description: "تحليل البيانات الضخمة لاستخراج رؤى قيمة تساعد الشركات على اتخاذ قرارات استراتيجية.",
         },
       ];
+      const navigate = useNavigate();
+
+      const handleClick = () => {
+        navigate('/layout/Work/media');
+      };
   return (
     <>
     <div className=' container'>
@@ -114,7 +120,8 @@ const Work = () => {
                 <h4 className="fw-bold mt-3">{work.title}</h4>
                 <p className="card-text">{work.description}</p>
                 <div className="d-flex gap-2 justify-content-end">
-                  <button className="btn" style={{ backgroundColor: "#634AFF0D", color: "#4318FF" }}>
+                  <button className="btn" style={{ backgroundColor: "#634AFF0D", color: "#4318FF" }}       onClick={handleClick}
+>
                     تفاصيل أكثر
                   </button>
                   <button className="btn" style={{ backgroundColor: "#4318FF", color: "white" }}>
