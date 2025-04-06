@@ -6,8 +6,8 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="navbar navbar-expand-lg bg-white z-2 px-3 shadow-sm">
-      <div className="w-100 d-flex justify-content-between align-items-center">
+    <nav className="navbar navbar-expand-lg bg-white z-2 px-3 shadow-sm ">
+      <div className="w-100 d-flex justify-content-between align-items-center  ">
         <div className="d-flex gap-2">
           <button className="btn text-white" style={{ backgroundColor: "#4318FF" }}>
             <img src={logoservice} alt="طلب خدمة" /> طلب خدمة
@@ -32,7 +32,7 @@ const Navbar = () => {
               { path: "/layout/Work", label: "الأعمال" },
               { path: "/layout/Service", label: "الخدمات" },
               { path: "/layout/Aboutus", label: "معلومات عنا" },
-              { path: "#", label: "احصل على سعر" },
+              { path: "/layout/Maps", label: "احصل على سعر" },
               { path: "/layout/Artical", label: "المقالات" },
               { path: "#", label: "تواصل معنا" },
             ].map((item, index) => (

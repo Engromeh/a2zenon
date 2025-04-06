@@ -10,6 +10,8 @@ import Work from "../Pages/Work.jsx";
 import Articles from "../Pages/Articles.jsx";
 import Media from "../Component/Media/Media.jsx";
 import Services from "../Pages/Services.jsx";
+import Maps from "../Pages/Maps.jsx";
+import ResponsiveIssues from "../Component/ResponsiveIssues/ResponsiveIssues.jsx";
 
 const Router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,6 +23,10 @@ const Router = createBrowserRouter(
         <Route path="/layout/Artical" element={<Articles />} />
         <Route path="/layout/Work/media" element={<Media/>} />
         <Route path="/layout/Service" element={<Services />} />
+        <Route path="/layout/Maps" element={<Maps />} />       
+         <Route path="/layout/Artical/issues" element={<ResponsiveIssues />} />
+
+
 
 
       </Route>

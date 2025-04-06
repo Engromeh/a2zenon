@@ -10,10 +10,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import {  Pagination } from "swiper/modules";
+import { useNavigate } from "react-router-dom";
 
 const Articles = () => {
   const [activeButton, setActiveButton] = useState(0);
+  const navigate = useNavigate();
 
+  const handleCardClick = () => {
+    navigate("/layout/Artical/issues");
+  };
   const btnWork = [
     "جميع الخدمات",
     "تصميم المواقع",
@@ -162,58 +167,54 @@ const Articles = () => {
             </button>
           ))}
         </div>
-
         <div className="row justify-content-center">
-          {articles.map((article, index) => (
-            <div key={article.id} className="col-md-4 mb-4">
-              <div
-                className="card  rounded-4 border-0 text-end p-4"
-                style={{ maxWidth: "300px", backgroundColor: "#634AFF0F" }}
-              >
-                <img
-                  src={article.image}
-                  alt="Article"
-                  className="img-fluid mx-auto d-block"
-                  style={{ width: "100px" }}
-                />
+      {articles.map((article, index) => (
+        <div key={article.id} className="col-md-4 mb-4">
+          <div
+            className="card rounded-4 border-0 text-end p-4"
+            style={{ maxWidth: "300px", backgroundColor: "#634AFF0F", cursor: "pointer" }}
+            onClick={handleCardClick}
+          >
+            <img
+              src={article.image}
+              alt="Article"
+              className="img-fluid mx-auto d-block"
+              style={{ width: "100px" }}
+            />
 
-                <div className="d-flex justify-content-end align-items-center gap-2 mt-2">
-                  <span className="text-muted" style={{ direction: "rtl" }}>
-                    {article.date}
-                  </span>
-                  <img src={artical2} alt="artical2" />
-                  <img src={artical3} alt="artical3" />
-                </div>
+            <div className="d-flex justify-content-end align-items-center gap-2 mt-2">
+              <span className="text-muted" style={{ direction: "rtl" }}>
+                {article.date}
+              </span>
+              <img src={artical2} alt="artical2" />
+              <img src={artical3} alt="artical3" />
+            </div>
 
-                <h5 className="mt-3 fw-bold" style={{ direction: "rtl" }}>
-                  {article.title}
-                </h5>
+            <h5 className="mt-3 fw-bold" style={{ direction: "rtl" }}>
+              {article.title}
+            </h5>
 
-                <p className="text-muted px-3" style={{ fontSize: "14px" }}>
-                  {article.description}
-                </p>
+            <p className="text-muted px-3" style={{ fontSize: "14px" }}>
+              {article.description}
+            </p>
 
-                <div className="d-flex justify-content-around align-items-center text-muted mt-3">
-                  <div>
-                    <img src={Love} alt="Love" /> اعجبتني
-                  </div>
-                  <div>
-                    <img src={Like} alt="Like" /> جيدة
-                  </div>
-                  <div>
-                    <img
-                      src={pepole}
-                      alt="Views"
-                      style={{ direction: "rtl" }}
-                    />{" "}
-                    {article.views}
-                  </div>
-                </div>
+            <div className="d-flex justify-content-around align-items-center text-muted mt-3">
+              <div>
+                <img src={Love} alt="Love" /> اعجبتني
+              </div>
+              <div>
+                <img src={Like} alt="Like" /> جيدة
+              </div>
+              <div>
+                <img src={pepole} alt="Views" /> {article.views}
               </div>
             </div>
-          ))}
+          </div>
         </div>
+      ))}
+    </div>
 
+       
         <div>
 
 

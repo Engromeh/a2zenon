@@ -276,3 +276,24 @@ width: 17rem;
     z-index: 1;
     right: -17px;
 }
+.map2{
+  position: relative;
+}
+
+.border-start {
+  left: 50%;
+  width: 3px;
+}
+
+.Map3::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #7B61FF; 
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 0 5px #4318FF; 
+  z-index: 1;
+}
