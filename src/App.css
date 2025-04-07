@@ -303,8 +303,8 @@ width: 17rem;
   height: 325px;
   background-color: white;
   border-radius: 25px;
-  position: relative;
-  bottom: 80px;
+  position: absolute;
+  bottom: -11rem;
   left: 220px;
 }
 .buttn-plan{

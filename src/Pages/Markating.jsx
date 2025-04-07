@@ -2,6 +2,8 @@ import React from "react";
 import videoicon from "../assets/videoicon.svg";
 import merkatinghero from "../assets/markatinghero.svg";
 import Markating2 from "../assets/markating2.svg";
+import Markatingbg from "../assets/markatingbg.svg";
+
 
 const Markating = () => {
     const cardData = [
@@ -78,14 +80,14 @@ text: `العلاقات العامة الرقمية - بناء الروابط ه
     <>
       <section
         style={{
-          backgroundColor: "#4318FF",
           position: "relative",
           overflow: "hidden",
         }}
       >
-        <div className="container pt-3 pb-3">
+      <img src={Markatingbg} alt="ff"  className=" w-100 "/>
+       <div className="container pt-3 pb-3">
           <div className="row align-items-center flex-row-reverse">
-            <div className="col-md-6 text-end text-white">
+            <div className="col-md-6 text-end text-white" style={{position:"absolute" , bottom:"28rem"}}>
               <h3 className="fw-bold" style={{fontSize:"40px"}}>التسويق الالكتروني</h3>
               <p style={{fontSize:"24px"}}>
                 نؤمن في شركة اي تو زينون بأن التسويق الرقمى ليس مجرد
@@ -135,7 +137,7 @@ text: `العلاقات العامة الرقمية - بناء الروابط ه
               </div>
             </div>
 
-            <div className="col-md-6 py-3 text-center">
+            <div className="col-md-6 py-3 text-center " style={{position:"absolute" , bottom:"25rem" , right:"50rem"}}>
               <img
                 src={merkatinghero}
                 alt="merkatinghero"
@@ -143,7 +145,7 @@ text: `العلاقات العامة الرقمية - بناء الروابط ه
               />
             </div>
           </div>
-        </div>
+        </div> 
       </section>
       
 

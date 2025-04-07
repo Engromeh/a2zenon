@@ -14,6 +14,8 @@ import Hosting9 from "../assets/hosting9.svg";
 import icone1 from "../assets/icone1.svg";
 import icone2 from "../assets/icone2.svg";
 import icone3 from "../assets/icone3.svg";
+import Hostingbg from "../assets/hostingbg.svg";
+
 import { Button, Card, Col, Row } from "react-bootstrap";
 import { FaCheckCircle } from "react-icons/fa";
 
@@ -63,14 +65,14 @@ const Hosting = () => {
     <>
       <section
         style={{
-          backgroundColor: "#4318FF",
           position: "relative",
           overflow: "hidden",
         }}
       >
+<img src={Hostingbg} alt=" Hostingbg" className=" w-100 h-100" />
         <div className="container py-5">
           <div className="row align-items-center flex-row-reverse">
-            <div className="col-md-6 text-end text-white">
+            <div className="col-md-6 text-end text-white" style={{position:"absolute" ,  bottom:"37rem"}}>
               <h3 className="fw-bold" style={{ fontSize: "40px" }}>
                 استضافة المواقع
               </h3>
@@ -120,7 +122,7 @@ const Hosting = () => {
               </div>
             </div>
 
-            <div className="col-md-6 pb-5 text-center">
+            <div className="col-md-6 pb-5 text-center" style={{position:"absolute" , right:"45rem" , bottom:"26rem"}}>
               <img src={Hostinghero} alt="Hostinghero" className="img-fluid" />
             </div>
           </div>
