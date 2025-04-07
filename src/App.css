@@ -100,7 +100,7 @@ body {
 }
 
 .titel-all {
-  background: linear-gradient(to right, #52cff3 15%, #4a46e0 85%);
+  background: linear-gradient(to right, #52cff3 40%, #4a46e0 60%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
@@ -306,4 +306,28 @@ width: 17rem;
   position: relative;
   bottom: 80px;
   left: 220px;
+}
+.buttn-plan{
+  background: linear-gradient(to right, #4a46e0  15%,  #52cff3 85%);
+color: white;
+border-radius: 20px !important;
+width: 50%;
+
+}
+.img-hosting7{
+background-color: #67E9F0;
+border-radius: 50%;
+width: 60px;
+padding: 11px;
+height: 58px;
+position: relative;
+bottom: 55px;
+}
+.buttun-hosting2{
+  background: linear-gradient(to right, #4a46e0  15%,  #52cff3 85%);
+  color: white !important;
+  border-radius: 20px !important;
+  width: 10%;
+  
+
 }
