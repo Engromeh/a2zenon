@@ -12,6 +12,8 @@ import Media from "../Component/Media/Media.jsx";
 import Services from "../Pages/Services.jsx";
 import Maps from "../Pages/Maps.jsx";
 import ResponsiveIssues from "../Component/ResponsiveIssues/ResponsiveIssues.jsx";
+import Markating from "../Pages/Markating.jsx";
+import Hosting from "../Pages/Hosting.jsx";
 
 const Router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,6 +27,9 @@ const Router = createBrowserRouter(
         <Route path="/layout/Service" element={<Services />} />
         <Route path="/layout/Maps" element={<Maps />} />       
          <Route path="/layout/Artical/issues" element={<ResponsiveIssues />} />
+         <Route path="/layout/Markating" element={<Markating />} />       
+         <Route path="/layout/Hosting" element={<Hosting />} />       
+
 
 
 

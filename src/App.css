@@ -297,3 +297,13 @@ width: 17rem;
   box-shadow: 0 0 0 5px #4318FF; 
   z-index: 1;
 }
+
+.Hosting-card{
+  width: 1100px;
+  height: 325px;
+  background-color: white;
+  border-radius: 25px;
+  position: relative;
+  bottom: 80px;
+  left: 220px;
+}
