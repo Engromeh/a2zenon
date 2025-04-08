@@ -1,5 +1,6 @@
 import React from "react";
 import service1 from "../../assets/service1.svg";
+import { useNavigate } from "react-router-dom";
 
 const services = [
   {
@@ -53,6 +54,8 @@ const services = [
 ];
 
 const ServiceSection = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="text-center mt-4">
@@ -108,6 +111,7 @@ const ServiceSection = () => {
                     <button
                       className="btn"
                       style={{ backgroundColor: "#4318FF", color: "white" }}
+                      onClick={() => navigate("/layout/Markating")}
                     >
                       اطلب الخدمة
                     </button>

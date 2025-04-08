@@ -4,6 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import service1 from "../../assets/service1.svg";
+import { useNavigate } from "react-router-dom";
 
 const services = [
   {
@@ -46,6 +47,7 @@ const services = [
 
 const SubServices = () => {
   const [selectedService, setSelectedService] = useState(1);
+  const navigate = useNavigate();
 
   return (
     <div className="container  mt-5">
@@ -122,7 +124,9 @@ const SubServices = () => {
                 ? { backgroundColor: "#4318FF", borderColor: "#4318FF" }
                 : {}
             }
-            onClick={() => setSelectedService(5)}
+            onClick={() => navigate("/layout/Hosting")}
+
+
           >
             استضافة المواقع
           </button>
@@ -178,6 +182,8 @@ const SubServices = () => {
                     <button
                       className="btn"
                       style={{ backgroundColor: "#4318FF", color: "white" }}
+                      onClick={() => navigate("/layout/Hosting")}
+
                     >
                       اطلب الخدمة
                     </button>
