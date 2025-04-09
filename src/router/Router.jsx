@@ -15,6 +15,7 @@ import ResponsiveIssues from "../Component/ResponsiveIssues/ResponsiveIssues.jsx
 import Markating from "../Pages/Markating.jsx";
 import Hosting from "../Pages/Hosting.jsx";
 import Design from "../Pages/Design.jsx";
+import ServiceForm from "../Pages/ServiceForm.jsx";
 
 const Router = createBrowserRouter(
   createRoutesFromElements(
@@ -30,7 +31,9 @@ const Router = createBrowserRouter(
          <Route path="/layout/Artical/issues" element={<ResponsiveIssues />} />
          <Route path="/layout/Markating" element={<Markating />} />       
          <Route path="/layout/Hosting" element={<Hosting />} />       
-         <Route path="/layout/Design" element={<Design />} />       
+         <Route path="/layout/Design" element={<Design />} />  
+         <Route path="/layout/Serviceform" element={<ServiceForm />} />       
+     
 
 
 

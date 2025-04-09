@@ -331,3 +331,31 @@ bottom: 55px;
   
 
 }
+.serviceform-card{
+  width: 70rem;
+  height: 42rem;
+  background-color: white;
+  border-radius: 25px;
+  position: absolute;
+  bottom: -14rem;
+  left: 220px;
+}
+.input-service{
+  direction: rtl;
+  margin-top: 15px;
+  border: 1px solid #60A8FF !important;
+}
+.select-service{
+
+display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    direction: rtl;
+    margin-top: 15px;
+    border: 1px solid #60A8FF !important;
+    border-radius: 10px;
+    padding-left: 20px !important;
+}
